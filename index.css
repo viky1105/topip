@@ -54,7 +54,7 @@ nav{
     background: rgb(0,78,146);
     background: radial-gradient(circle, rgba(0,78,146,1) 0%, rgba(0,4,40,1) 100%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     color: white;
     text-align: left;
     /* line-height: 1; */
@@ -126,6 +126,26 @@ nav{
 }
 .toast-container{
     z-index: 5;
+}
+#market{
+    background: rgb(67,67,67);
+    background: radial-gradient(circle, rgba(67,67,67,1) 0%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.market1{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.mark{
+    padding: 3% 3%;
+}
+
+#deposit{
+    background: rgb(67,67,67);
+    background: radial-gradient(circle, rgba(67,67,67,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 
