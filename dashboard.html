@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dashboard</title>
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f7d3252e78.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <section> 
@@ -56,37 +59,37 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"> <i class="fa-solid fa-grip"></i> Home</a>
+              <a class="nav-link active" aria-current="page" href="dashboard.html" onclick=“window.open(‘dashboard.html’, ‘_self’);”> <i class="fa-solid fa-grip"></i> Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/market.html"><i class="fa-solid fa-chart-simple"></i> Market</a>
+              <a class="nav-link" href="market.html" onclick=“window.open(‘market.html’, ‘_self’);”><i class="fa-solid fa-chart-simple"></i> Market</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="deposit.html"><i class="fa-solid fa-wallet"></i> Deposit</a>
+              <a class="nav-link" href="deposit.html" onclick=“window.open(‘deposit.html’, ‘_self’);”><i class="fa-solid fa-wallet"></i> Deposit</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-solid fa-money-bill-transfer"></i> Fund Transfer</a>
+              <a class="nav-link" href="fundtransfer.html " onclick=“window.open(‘fundtransfer.html’, ‘_self’);”><i class="fa-solid fa-money-bill-transfer"></i> Fund Transfer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-solid fa-landmark"></i> Withdrawal</a>
+              <a class="nav-link" href="withdrawal.html" onclick=“window.open(‘withdrawal.html’, ‘_self’);”><i class="fa-solid fa-landmark"></i> Withdrawal</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-solid fa-clock-rotate-left"></i> History</a>
+              <a class="nav-link" href="history.html" onclick=“window.open(‘history.html’, ‘_self’);”><i class="fa-solid fa-clock-rotate-left"></i> History</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-solid fa-box-archive"></i> Packages</a>
+              <a class="nav-link" href="packages.html" onclick=“window.open(‘packages.html’, ‘_self’);”><i class="fa-solid fa-box-archive"></i> Packages</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-solid fa-robot"></i> Trading Bot</a>
+              <a class="nav-link" href="tradingbot.html" onclick=“window.open(‘tradingbot.html’, ‘_self’);”><i class="fa-solid fa-robot"></i> Trading Bot</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-solid fa-money-check"></i> KYC</a>
+              <a class="nav-link" href="kyc.html" onclick=“window.open(‘kyc.html’, ‘_self’);”><i class="fa-solid fa-money-check"></i> KYC</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+              <a class="nav-link" href="setting.html" onclick=“window.open(‘setting.html’, ‘_self’);”><i class="fa-solid fa-gear"></i> Settings</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+              <a class="nav-link" href=""><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
             </li>
           </ul>
           <P>subscribe to our news letter</P>
@@ -150,7 +153,7 @@
           
          <div class="p-3">
           <h6>BALANCE</h6>
-          <h1>$ 0.00 <span class="ico"><i class="fa-solid fa-wallet fa-beat"></i></span></h1>
+          <h1>$ 0.00 <i class="fa-solid ico fa-wallet"></i></h1>
           <p>BTC 0.00</p>
           
          </div>
@@ -171,14 +174,14 @@
           
          <div class="p-3">
           <h6>CRYPTO PLAN</h6>
-          <h1>No Active Plan<span class="ico"><i class="fa-solid fa-boxes-packing fa-beat"></i></span></h1>
+          <h4>No Active Plan</h4>
           
          </div>
         </div>
         <div class="col">
           <div class="p-3">
             <h6>TRADE PERCENTAGE</h6>
-          <h1>100% <span class="ico"><i class="fa-solid fa-percent"></i></span> </h1>
+          <h4>100% <i class="fa-solid ico fa-percent"></i></h4>
           
           </div>
         </div>
@@ -187,7 +190,7 @@
     <div class="row prof">
       <div class="col-lg-12 profit">
           <h6>PROFIT</h6>
-          <h1>$ 0.00 <span class="ico"><i class="fa-solid fa-arrow-trend-up fa-bounce zeroi"></i></span></h1>
+          <h1>$ 0.00 <i class="fa-solid fa-arrow-trend-up fa-bounce zeroi"></i></h1>
           <p>BTC 0.00</p>
          
         </div>
@@ -308,8 +311,6 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <SCript src="/index.js">
-
-    </SCript>
+    <script src="index.js"></script>
 </body>
 </html>
