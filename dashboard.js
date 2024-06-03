@@ -1,13 +1,15 @@
 window.onload = function() {
-  const username = localStorage.getItem('exampleInputEmail1');
-  const password = localStorage.getItem('exampleInputPassword1');
+  const username = localStorage.getItem('dashboardUsername');
+  const email = localStorage.getItem('dashboardEmail');
+  
 
-  if (username && password) {
-      document.getElementById('displayUsername').textContent = ` ${username}`;
-      document.getElementById('displayPassword').textContent = ` ${password}`;
+  if (username && email) {
+      document.getElementById('displayEmail').textContent = ` ${username}`;
+      document.getElementById('new').textContent = `Welcome ${email}`;
   } else {
-      document.getElementById('displayUsername').textContent = 'No data found';
-      document.getElementById('displayPassword').textContent = '';
+      document.getElementById('displayEmail').textContent = 'No data found';
+      document.getElementById('new').textContent = '';
+     
   }
 }
 

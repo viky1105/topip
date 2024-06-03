@@ -7,7 +7,7 @@ function handleLogin() {
 
     if (username === registeredUsername && password === registeredPassword) {
         alert('Login successful!');
-        localStorage.setItem('exampleInputEmail1', username);
+        localStorage.setItem('username', username);
         window.location.href = 'dashboard.html';
     } else {
 
