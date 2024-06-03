@@ -1,22 +1,18 @@
-document.getElementById("alertbutton").addEventListener("click", function () {
-    alert("you successlly created an order");
-});
-document.getElementById("sell").addEventListener("click", function () {
-    alert("order has been sold");
-});
+function handleLogin() {
+    const username = document.getElementById('exampleInputEmail1').value;
+    const password = document.getElementById('exampleInputPassword1').value;
 
+    const registeredUsername = localStorage.getItem('registeredUsername');
+    const registeredPassword = localStorage.getItem('registeredPassword');
 
-document.getElementById("showButton").addEventListener("click", function() {
-  showFirstElementForSomeSeconds();
-});
+    if (username === registeredUsername && password === registeredPassword) {
+        alert('Login successful!');
+        localStorage.setItem('exampleInputEmail1', username);
+        window.location.href = 'dashboard.html';
+    } else {
 
-function showFirstElementForSomeSeconds() {
-  var firstElement = document.getElementById("firstElement");
-  var secondElement = document.getElementById("secondElement");
-  
-  firstElement.style.display = "block";
-  setTimeout(function(){
-    firstElement.style.display = "none";
-    secondElement.style.display = "block";
-  }, 3000); // Change 3000 to the number of milliseconds you want the first element to be displayed
+        alert('Invalid username or password');
+
+    }
 }
+
