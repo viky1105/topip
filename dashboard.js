@@ -1,17 +1,16 @@
 window.onload = function() {
-  const username = localStorage.getItem('dashboardUsername');
-  const email = localStorage.getItem('dashboardEmail');
-  
+    const username = localStorage.getItem('dashboardUsername');
+    const email = localStorage.getItem('dashboardEmail');
 
-  if (username && email) {
-      document.getElementById('displayEmail').textContent = ` ${username}`;
-      document.getElementById('new').textContent = `Welcome ${email}`;
-  } else {
-      document.getElementById('displayEmail').textContent = 'No data found';
-      document.getElementById('new').textContent = '';
-     
-  }
+    if (username && email) {
+        document.getElementById('displayUsername').textContent = `Welcome, ${username}!`;
+        document.getElementById('displayEmail').textContent = `Email: ${email}`;
+    } else {
+        document.getElementById('displayUsername').textContent = 'No data found';
+        document.getElementById('displayEmail').textContent = '';
+    }
 }
+
 
 
 
