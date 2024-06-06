@@ -11,9 +11,19 @@ window.onload = function() {
     }
 }
 
+// Function to update the text on the user page
+function updateUserText() {
+    const userText = localStorage.getItem('userText');
+    if (userText) {
+        document.getElementById('userText').innerText = userText;
+    }
+}
 
+// Update text on page load
+updateUserText();
 
-
+// Listen for storage changes to update the text dynamically
+window.addEventListener('storage', updateUserText);
 
 
 
